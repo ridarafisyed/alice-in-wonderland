@@ -1,12 +1,17 @@
 /** @format */
 
+.cls-1 {
+	fill: #441238;
+}
+.cls-2 {
+	fill: #fff;
+}
 html,
 body {
 	background: #000;
 	font-family: sans-serif;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 }
 
 .wrapper {
@@ -20,14 +25,7 @@ body {
 	position: relative;
 	margin: 0 auto;
 }
-.cube {
-	width: 100px;
-	height: 100px;
-	display: block;
-	background-color: #861f4c;
-	margin-top: 15%;
-	margin-left: 45%;
-}
+
 * {
 	user-select: none;
 }
@@ -173,21 +171,21 @@ img {
 }
 
 .frame {
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/corner_lb.svg")
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/corner_lb.svg)
 			no-repeat left bottom,
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/corner_rb.svg") right
+		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/corner_rb.svg) right
 			bottom no-repeat,
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/corner_lt.svg") left
+		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/corner_lt.svg) left top
+			no-repeat,
+		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/corner_rt.svg) right
 			top no-repeat,
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/corner_rt.svg") right
-			top no-repeat,
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg-tunnel-border-top.svg")
+		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg-tunnel-border-top.svg)
 			repeat-x 0 -90px,
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg-tunnel-border-bottom.svg")
+		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg-tunnel-border-bottom.svg)
 			repeat-x 100% calc(100% + 90px),
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg-tunnel-border-left.svg")
+		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg-tunnel-border-left.svg)
 			repeat-y -90px 0,
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg-tunnel-border-right.svg")
+		url(/https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg-tunnel-border-right.svg)
 			repeat-y calc(100% + 90px) 100%;
 	box-sizing: border-box;
 	pointer-events: none;
@@ -198,7 +196,7 @@ img {
 }
 
 .ending {
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_tunnel-specks.png"),
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_tunnel-specks.png),
 		#6c373f;
 	overflow: hidden;
 	position: absolute;
@@ -339,7 +337,7 @@ a:focus {
 }
 
 #ending-ui {
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_plaque.svg")
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_plaque.svg)
 		no-repeat 0 0 / 100% 100%;
 	box-sizing: border-box;
 	color: #ffeef4;
